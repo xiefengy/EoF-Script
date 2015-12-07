@@ -300,9 +300,12 @@ def ploteof(reg,masksst,xsst,ysst,pc,timesst,var,latmin,latmax,lonmin,lonmax):
         
         plt.xlim(np.amin(xplot),np.amax(xplot))
         plt.ylim(np.amin(yplot),np.amax(yplot))
+        #plt.xticks(#array of labels)
         plt.axis('image')
         
         plt.colorbar()
+        
+        
         plt.title('eof var=%2.0f'%(var[n]*100))
         
         plt.subplot(2,1,2)
@@ -358,6 +361,7 @@ def plothoev(sst,timesst,xsst,ysst,masksst,anom,yearly):
     plt.ylim(np.amin(timesstplot),np.amax(timesstplot))
     plt.title(r'lat=%3.2f$^o$'%(Ygrid))
     plt.axis('image')
+    
     plt.colorbar()
 
 
